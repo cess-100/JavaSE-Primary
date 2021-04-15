@@ -18,8 +18,7 @@ public class CustomerView {
     public void enterMainMenu() {
         boolean loopFlag = true;
         while (loopFlag) {
-            System.out
-                    .println("\n-----------------客户信息管理软件-----------------\n");
+            System.out.println("\n-----------------客户信息管理软件-----------------\n");
             System.out.println("                   1 添 加 客 户");
             System.out.println("                   2 修 改 客 户");
             System.out.println("                   3 删 除 客 户");
@@ -146,6 +145,7 @@ public class CustomerView {
                 break;
             }
         }
+
         System.out.print("确认是否删除(Y/N)：");
         char isFlag = CMUtility.readConfirmSelection();
         if (isFlag == 'Y') {

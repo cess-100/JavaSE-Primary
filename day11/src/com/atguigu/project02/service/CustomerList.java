@@ -5,7 +5,6 @@ import com.atguigu.project02.bean.Customer;
 /**
  * @author cess
  * @Description
- * @createTime 2021-04-15 5:32 下午
  */
 public class CustomerList {
     private Customer[] customers;
@@ -13,8 +12,6 @@ public class CustomerList {
 
     /**
      * 创建CustomerList对象
-     *
-     * @param totalCustomer
      */
     public CustomerList(int totalCustomer) {
         this.customers = new Customer[totalCustomer];
