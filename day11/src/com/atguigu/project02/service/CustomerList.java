@@ -3,8 +3,21 @@ package com.atguigu.project02.service;
 import com.atguigu.project02.bean.Customer;
 
 /**
- * @author cess
- * @Description
+ * 1.至少独立完成一遍以上的项目代码
+ *
+ * 2.积累完成项目的过程中常见的bug的调试
+ *     方式一：应看，必要时添加输出语句
+ *     方式二：debug
+ *
+ * 3.捋顺思路,强化逻辑
+ *
+ * 4.对象、数组等内存结构的解析
+ *
+ * 5.遵守编码的规范,标识符的命名规范等
+ *
+ * 6.在类前,方法前,方法内具体逻辑的实现步骤等添加必要的注释
+ *     类、方法、属性前：文档注释
+ *     逻辑步骤：单行、多行注释
  */
 public class CustomerList {
     private Customer[] customers;
