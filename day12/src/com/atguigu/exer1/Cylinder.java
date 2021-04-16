@@ -25,7 +25,7 @@ public class Cylinder extends Circle {
     @Override
     public double findArea() {//返回圆柱的表面积
         return Math.PI * getRadius() * getRadius() * 2 +
-                2 * Math.PI * getRadius() * getLength();
+                2 * Math.PI * getRadius() * length;
     }
 
 }

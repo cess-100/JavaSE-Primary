@@ -2,7 +2,7 @@ package com.atguigu.java3;
 
 import com.atguigu.java2.Order;
 
-public class SubOrder extends Order {
+public class A1SubOrder extends Order {
 	
 	public void method(){
 		orderProtected = 1;
