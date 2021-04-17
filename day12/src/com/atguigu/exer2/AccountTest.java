@@ -5,8 +5,6 @@ package com.atguigu.exer2;
  * 使用withdraw方法提款30000元，并打印余额。
  * 再使用withdraw方法提款2500元，
  * 使用deposit方法存款3000元，然后打印余额和月利率。
-
- * 
  */
 public class AccountTest {
 	public static void main(String[] args) {
@@ -21,9 +19,5 @@ public class AccountTest {
 		System.out.println("您的账户余额为：" + acct.getBalance());
 		
 		System.out.println("月利率为：" + (acct.getMonthlyInterest() * 100) +"%");
-		
-		
-		
-		
 	}
 }
