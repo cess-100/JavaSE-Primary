@@ -15,6 +15,5 @@ public class CircleTest {
 		
 		System.out.println(circle1);
 		System.out.println(circle2.toString());
-		
 	}
 }
