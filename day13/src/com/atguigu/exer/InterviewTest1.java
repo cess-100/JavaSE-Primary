@@ -5,10 +5,10 @@ public class InterviewTest1 {
 
     public static void main(String[] args) {
         Base1 b = new Sub1();
-        b.add(1, 2, 3);
+        b.add(1, 2, 3);//sub_1
 
         Sub1 s = (Sub1) b;
-        s.add(1, 2, 3);
+        s.add(1, 2, 3);//sub_2，确定个数的优先调用
     }
 }
 
@@ -19,7 +19,6 @@ class Base1 {
 }
 
 class Sub1 extends Base1 {
-
     public void add(int a, int[] arr) {
         System.out.println("sub_1");
     }
