@@ -1,7 +1,7 @@
 package com.atguigu.exer2;
 
 public class MyDateTest {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         MyDate m1 = new MyDate(14, 3, 1976);
         MyDate m2 = new MyDate(14, 3, 1976);
         if (m1 == m2) {
@@ -19,57 +19,54 @@ public class MyDateTest {
 
 }
 
-class MyDate{
-	private int day;
-	private int month;
-	private int year;
-	
-	public MyDate(int day, int month, int year) {
-		super();
-		this.day = day;
-		this.month = month;
-		this.year = year;
-	}
+class MyDate {
+    private int day;
+    private int month;
+    private int year;
 
-	public int getDay() {
-		return day;
-	}
+    public MyDate(int day, int month, int year) {
+        super();
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
 
-	public void setDay(int day) {
-		this.day = day;
-	}
+    public int getDay() {
+        return day;
+    }
 
-	public int getMonth() {
-		return month;
-	}
+    public void setDay(int day) {
+        this.day = day;
+    }
 
-	public void setMonth(int month) {
-		this.month = month;
-	}
+    public int getMonth() {
+        return month;
+    }
 
-	public int getYear() {
-		return year;
-	}
+    public void setMonth(int month) {
+        this.month = month;
+    }
 
-	public void setYear(int year) {
-		this.year = year;
-	}
+    public int getYear() {
+        return year;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if(this == obj){
-			return true;
-		}
-		
-		if(obj instanceof MyDate){
-			MyDate myDate = (MyDate)obj;
-			return this.day == myDate.day && this.month == myDate.month &&
-					this.year == myDate.year;
-		}
-		
-		return false;
+    public void setYear(int year) {
+        this.year = year;
+    }
 
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof MyDate) {
+            MyDate myDate = (MyDate) obj;
+            return this.day == myDate.day && this.month == myDate.month &&
+                    this.year == myDate.year;
+        }
+        return false;
+    }
 
 //	@Override
 //	public boolean equals(Object obj) {
@@ -88,6 +85,4 @@ class MyDate{
 //			return false;
 //		return true;
 //	}
-	
-	
 }
