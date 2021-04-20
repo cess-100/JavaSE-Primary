@@ -7,11 +7,12 @@ package com.atguigu.java3;
  * ④有了对象以后，可以通过"对象.属性"或"对象.方法"的方式，进行赋值
  * 
  * 
- * 执行的先后顺序：① - ② / ⑤ - ③ - ④
+ * 执行的先后顺序：① - ②/⑤ - ③ - ④
+ * ②跟⑤先后看在类里面书写的先后
  */
 
 
-public class OrderTest {
+public class A4OrderTest {
 	public static void main(String[] args) {
 		Order order = new Order();
 		System.out.println(order.orderId);
@@ -19,12 +20,8 @@ public class OrderTest {
 }
 
 class Order{
-	
-	
 	int orderId = 3;
 	{
 		orderId = 4;
 	}
-	
-	
 }

@@ -9,7 +9,6 @@ public class MainDemo {
 
             int num = Integer.parseInt(arg);
             System.out.println("#####" + num);
-
         }
     }
 }
