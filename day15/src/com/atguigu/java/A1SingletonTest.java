@@ -1,6 +1,6 @@
 package com.atguigu.java;
 
-public class SingletonTest {
+public class A1SingletonTest {
 	public static void main(String[] args) {
 		
 		Bank bank1 = Bank.instance;
@@ -14,11 +14,8 @@ public class SingletonTest {
 }
 
 class Bank{
-	
-	private Bank(){
-		
-	}
-	
 	public static final Bank instance = new Bank();
-	
+
+	private Bank(){
+	}
 }
