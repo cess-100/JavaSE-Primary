@@ -25,9 +25,7 @@ public class ReturnExceptionDemo {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
-		
+
 		methodB();
 	}
 }

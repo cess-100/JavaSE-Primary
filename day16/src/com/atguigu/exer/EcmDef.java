@@ -10,7 +10,6 @@ package com.atguigu.exer;
 	(4)运行时接受参数 java EcmDef 20 10   //args[0]=“20” args[1]=“10”
 	(5)Interger类的static方法parseInt(String s)将s转换成对应的int值。
         如：int a=Interger.parseInt(“314”);	//a=314;
-
  */
 public class EcmDef {
 	public static void main(String[] args) {
@@ -30,7 +29,6 @@ public class EcmDef {
 		}catch(EcDef e){
 			System.out.println(e.getMessage());
 		}
-		
 	}
 	
 	public static int ecm(int i,int j) throws EcDef{
