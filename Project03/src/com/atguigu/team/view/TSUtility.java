@@ -3,26 +3,35 @@ package com.atguigu.team.view;
 import java.util.*;
 
 public class TSUtility {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-	public static char readMenuSelection() {
+    /**
+     * 读取键盘，如果用户键入'1'到'4'，则返回该字符
+     */
+    public static char readMenuSelection() {
         char c;
         for (; ; ) {
             String str = readKeyBoard(1, false);
             c = str.charAt(0);
             if (c != '1' && c != '2' &&
-                c != '3' && c != '4') {
+                    c != '3' && c != '4') {
                 System.out.print("选择错误，请重新输入：");
             } else break;
         }
         return c;
     }
 
+    /**
+     * 提示等待，直到用户按回车键后返回
+     */
     public static void readReturn() {
         System.out.print("按回车键继续...");
         readKeyBoard(100, true);
     }
 
+    /**
+     * 从键盘读取一个长度不超过两位整数的数，并将其作为方法的返回值
+     */
     public static int readInt() {
         int n;
         for (; ; ) {
@@ -37,6 +46,9 @@ public class TSUtility {
         return n;
     }
 
+    /**
+     * 从键盘读取'Y'或'N'，并将其作为方法的返回值
+     */
     public static char readConfirmSelection() {
         char c;
         for (; ; ) {
@@ -51,6 +63,12 @@ public class TSUtility {
         return c;
     }
 
+    /**
+     * 从键盘获取数据，将其作为方法的返回值
+     *
+     * @param limit       读取的数据的长度限制
+     * @param blankReturn 是否返回空值
+     */
     private static String readKeyBoard(int limit, boolean blankReturn) {
         String line = "";
 
@@ -71,4 +89,3 @@ public class TSUtility {
         return line;
     }
 }
-

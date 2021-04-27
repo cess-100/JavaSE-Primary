@@ -14,9 +14,9 @@ public class NameListServiceTest {
 		NameListService listService = new NameListService();
 		
 		Employee[] employees = listService.getAllEmployees();
-		
-		for(int i = 0;i < employees.length;i++){
-			System.out.println(employees[i]);
+
+		for (Employee employee : employees) {
+			System.out.println(employee);
 		}
 	}
 	

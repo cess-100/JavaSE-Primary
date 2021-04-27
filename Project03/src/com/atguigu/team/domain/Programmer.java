@@ -3,15 +3,14 @@ package com.atguigu.team.domain;
 import com.atguigu.team.service.*;
 
 public class Programmer extends Employee {
-    private int memberId;
+    private int memberId;//开发团队中的TID
     private Status status = Status.FREE;
     private Equipment equipment;
 
     public Programmer() {
     }
 
-    public Programmer(int id, String name, int age, 
-                       double salary, Equipment equipment) {
+    public Programmer(int id, String name, int age, double salary, Equipment equipment) {
         super(id, name, age, salary);
         this.equipment = equipment;
     }
@@ -40,16 +39,16 @@ public class Programmer extends Employee {
         this.memberId = memberId;
     }
 
-    protected String getMemberDetails() {
+    @Override
+    public String toString() {
+        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription();
+    }
+
+    protected String getTeamBaseDetails() {
         return getMemberId() + "/" + getDetails();
     }
 
     public String getDetailsForTeam() {
-        return getMemberDetails() + "\t程序员";
-    }
-
-    @Override
-    public String toString() {
-        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription() ;
+        return getTeamBaseDetails() + "\t程序员";
     }
 }
